@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Company</title>
+</head>
+
+<body>
+    <header class="d-flex justify-content-center py-3 fixed-top p-3 bg-white">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <button id="link_works" class="nav-link" aria-current="page">Как Работи</button>
+            </li>
+            <li class="nav-item"><button id="link_advantages" href="#advantages" class="nav-link">Предимсва</button></li>
+            <li class="nav-item"><button id="link_about" class="nav-link">За нас</button></li>
+            <li class="nav-item"><button id="link_contacts" class="nav-link">Контакти</button></li>
+            <li class="nav-item"><button id="link_form" class="nav-link bg-info text-white">Свържете се с нас</button></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div id="works" class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 id="works-h" class="display-4 fw-bold">Как Работи</h1>
+            <div class="col-lg-6 mx-auto">
+                <p id="works-d" class="lead mb-4"></p>
+            </div>
+        </div>
+        <div id="advantages" class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold">Предимсва</h1>
+            <div id="advantages_list" class="container row m-auto">
+
+            </div>
+        </div>
+        <div id="about" class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 id="about-h" class="display-4 fw-bold">За Нас</h1>
+            <div class="col-lg-6 mx-auto">
+                <p id="about-d" class="lead mb-4"></p>
+            </div>
+            <div class="container">
+                <h2 id="company-h" class="display-6 fw-light">Компания</h1>
+            <div class="col-lg-6 mx-auto">
+                <p id="company-d" class="lead mb-4"></p>
+            </div>
+            <h2 id="quality-h" class="display-6 fw-light">Качество</h1>
+            <div class="col-lg-6 mx-auto">
+                <p id="quality-d" class="lead mb-4"></p>
+            </div>
+            </div>
+        </div>
+        <div id="contacts" class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 id="contacts-h" class="display-4 fw-bold">Контакти</h1>
+            <div class="col-lg-6 mx-auto">
+                <p id="contacts-d" class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                    world’s
+                    most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+                    system,
+                    extensive prebuilt components, and powerful JavaScript plugins.</p>
+            </div>
+            <form id="contact_form" class="container">
+                <div class="row p-3">
+                    <label for="name" class="p-2">Име</label>
+                    <input type="name" class="form-control" id="name" name="name" placeholder="Вашите име и фамилия">
+                </div>
+                <div class="row p-3">
+                    <label for="email" class="p-2">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Вашият мейл">
+                </div>
+                <div class="row p-3">
+                    <label for="phone" class="p-2">Телефон</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="+359 .... ....">
+                </div>
+                <div class="row p-3">
+                    <label for="message" class="p-2">Съобщение</label>
+                    <textarea type="text" class="form-control" id="message" name="message" placeholder="Съобщение"></textarea>
+                </div>
+                <div class="row p-3">
+                    <button type="submit" class="btn btn-primary">Прати</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
